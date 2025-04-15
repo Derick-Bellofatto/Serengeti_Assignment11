@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d700fa0f-14cb-49f0-9c86-7c27976fcc74</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Serengeti_Assignment11.py</StartupFile>
+    <StartupFile>mainPackage\main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,22 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Serengeti_Assignment11.py" />
+    <Compile Include="mainPackage\main.py" />
+    <Compile Include="mainPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="utilitiesPackage\AnomalyHandler.py" />
+    <Compile Include="utilitiesPackage\CSVProcessor.py" />
+    <Compile Include="utilitiesPackage\DataCleaner.py" />
+    <Compile Include="utilitiesPackage\ZipCodeAPI.py" />
+    <Compile Include="utilitiesPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="mainPackage\" />
+    <Folder Include="data\" />
+    <Folder Include="utilitiesPackage\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
