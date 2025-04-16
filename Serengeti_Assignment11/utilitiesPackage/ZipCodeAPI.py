@@ -1,5 +1,16 @@
+# File Name : ZipCodeAPI.py
+# Student Name: Matthew Boutros, Derick Bellofatto
+# email:  boutromw@mail.uc.edu, bellofdk@mail.uc.edu
+# Assignment Number: Assignment 11
+# Due Date:  4/16/2025
+# Course #/Section:   IS 4010 001
+# Semester/Year:   Spring 2025
+# Brief Description of the assignment:  This assignment involves cleaning and formatting a fuel purchase dataset by removing duplicates, filtering anomalies, correcting missing zip codes using an API, and writing the cleaned data to structured CSV files.
 
-# utilitiesPackage/ZipCodeAPI.py
+# Brief Description of what this module does: Identifies missing zip codes by extracting cities from addresses and querying a zip code API to update them.
+# Citations: chatgpt.com - generate certain code, zipcodebase.com - understanding their documentation
+
+# Anything else that's relevant:
  
 import requests
 import pandas as pd
